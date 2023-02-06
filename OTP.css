@@ -1,0 +1,76 @@
+Body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: #1b95a0;
+}
+
+.Container {
+  display: Flex;
+  flex-flow: Column;
+  height: 100%;
+  align-items: Space-Around;
+  justify-content: Center;
+  margin-top: -100px;
+}
+
+.UserInput {
+  display: Flex;
+  justify-content: Center;
+}
+
+Input {
+  margin: 10px;
+  height: 35px;
+  width: 65px;
+  border: None;
+  border-radius: 5px;
+  text-align: Center;
+  font-family: Arimo;
+  font-size: 20px;
+  caret-color: transparent;
+  background: #eef2f3;
+}
+
+H1 {
+  text-align: Center;
+  font-family: Arimo;
+  color: Honeydew;
+}
+#btn {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 30px;
+}
+Button {
+  width: 150px;
+  height: 40px;
+  /* margin: 25px Auto 0px Auto; */
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: rgb(25, 194, 25);
+  color: white;
+  font-size: 16px;
+  padding: 10px 0;
+}
+button:hover {
+  background-color: rgb(3, 90, 3);
+}
+#verify {
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+#para {
+    display: flex;
+    justify-content: center;
+}
+p {
+    margin-top: 50px;
+    margin-bottom: -150px;
+    font-size: 20px;
+    width: 30%;
+    text-align: center;
+}

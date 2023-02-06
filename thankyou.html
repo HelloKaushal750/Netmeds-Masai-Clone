@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Successful</title>
+    <style>
+      #loading {
+        width: 100%;
+        height: 100vh;
+        background: #ffffff url('Molecular DNA.gif') no-repeat center;
+        position: fixed;
+        z-index: 99999;
+      }
+      body {
+        background-color: #ffffff;
+      }
+      #companylogo {
+        display: flex;
+        justify-content: right;
+        width: 100%;
+        height: 150px;
+        margin-top: -30px;
+        margin-bottom: -30px;
+      }
+      #companylog > img {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+      }
+      #container {
+        display: flex;
+        flex-flow: column;
+        width: 40%;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        background-color: #f3f7fb;
+        border-radius: 20px 20px 20px 20px;
+        box-shadow: 10px 15px 15px rgb(191, 189, 189);
+      }
+      #logo {
+        background-color: #1b95a0;
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+        text-align: center;
+        margin: 0;
+        padding: 20px 0;
+        font-size: 100px;
+        color: #f3f7fb;
+      }
+      button {
+        width: 30%;
+        height: 40px;
+        margin: auto;
+        margin-top: 30px;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        background-color: #1b95a0;
+        color: white;
+        font-size: 16px;
+        padding: 10px 0;
+        margin-bottom: 20px;
+      }
+      button:hover {
+        background-color: #066169;
+      }
+      h1 {
+        color: #1b95a0;
+      }
+    </style>
+  </head>
+  <body onload="myFunction()">
+    <div id="loading"></div>
+    <div id="companylogo">
+      <img
+        src="data:image/png;base64,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"
+        alt="netmedslogo"
+      />
+    </div>
+    <div id="container">
+      <h1 id="logo"><i class="fa-regular fa-circle-check"></i></h1>
+      <h1>Your Payment is Successful !</h1>
+      <p>
+        Thankyou for your payment. An automated receipt will be sent to your
+        registered email.
+      </p>
+      <button onclick="window.location.href='https://www.netmeds.com/';">
+        Back to Home
+      </button>
+    </div>
+  </body>
+  <script>
+    var preloader = document.getElementById("loading");
+
+    function myFunction() {
+        preloader.style.display ='none';
+    }
+  </script>
+</html>
+<script
+  src="https://kit.fontawesome.com/3244e8e1e6.js"
+  crossorigin="anonymous"
+></script>
+

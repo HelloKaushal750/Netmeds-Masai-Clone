@@ -1,0 +1,119 @@
+body {
+  background-image: url("background.png");
+  height: 200%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#companylogo {
+  display: flex;
+  justify-content: right;
+  width: 100%;
+  height: 100px;
+  margin-bottom: -30px;
+}
+#companylog > img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+#container {
+  display: flex;
+  width: 60%;
+  height: 600px;
+  margin: 40px auto;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+#left-div {
+  background: #1b95a0;
+  display: flex;
+  width: 50%;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+#right-div {
+  width: 50%;
+  background-color: #f3f7fb;
+}
+h2 {
+  color: white;
+  background-color: #1b95a0;
+  line-height: 50px;
+  margin-top: 0;
+  padding-left: 10px;
+}
+#cardlogo {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 40px;
+}
+#cardlogo > img {
+  width: 12%;
+}
+#data {
+  padding: 60px;
+}
+input {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 30px;
+  font-size: 16px;
+  padding-left: 10px;
+}
+input::placeholder {
+  font-size: 16px;
+  line-height: 24px;
+  color: rgb(109, 108, 108);
+}
+#datecvv {
+  display: flex;
+  justify-content: last baseline;
+}
+select {
+  height: 45px;
+  margin-bottom: 30px;
+  color: rgb(109, 108, 108);
+  padding-left: 5px;
+  font-size: 16px;
+}
+#datecvv > #date {
+  width: 60%;
+  margin: auto;
+}
+#datecvv > #cvv {
+  width: 40%;
+}
+#btn {
+  display: flex;
+  justify-content: center;
+}
+#btn {
+  width: 50%;
+  height: 40px;
+  margin: auto;
+  margin-top: 0px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: #1b95a0;
+  color: white;
+  font-size: 16px;
+  padding: 10px 0;
+}
+#btn:hover {
+  background-color: #066169;
+}
+#link {
+  display: flex;
+  justify-content: right;
+  margin-top: -20px;
+}
+a {
+  text-decoration: none;
+  color: #1b95a0;
+  margin-right: 10px;
+}
