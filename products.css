@@ -1,0 +1,200 @@
+#div1 {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  margin: auto;
+  justify-content: space-between;
+  margin-top: 160px;
+}
+#div1 a {
+  text-decoration: none;
+  color: #151b39;
+  font-size: 15px;
+  padding: 10px;
+}
+
+#productmaincontainer {
+  width: 98%;
+  height: 1400px;
+  /* border: 1px solid blue; */
+  margin: auto;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+}
+#product_left_container {
+  width: 20%;
+  height: 1200px;
+}
+#product_right_container {
+  width: 80%;
+  height: 1200px;
+
+  margin-left: 20px;
+}
+#productcontainer_slide {
+  width: 100%;
+  height: 200px;
+  margin: auto;
+}
+#productcontainer_slide img {
+  width: 100%;
+  border-radius: 15px;
+  height: auto;
+}
+#productfilterdiv {
+  width: 100%;
+  height: 60px;
+  margin-top: 50px;
+  position: relative;
+}
+#sortdiv {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  right: 10px;
+  top: 45%;
+}
+#sortdiv h3 {
+  font-family: Lato;
+  color: #151b39;
+  font-weight: 400;
+}
+#sortdiv button {
+  cursor: pointer;
+  line-height: normal;
+  margin-left: 5px;
+  background: #ffffff;
+  height: 25px;
+  width: 100px;
+  border-radius: 10px;
+  box-shadow: none;
+}
+#sortdiv button:hover {
+  color: #24aeb1;
+  border: 1px solid #24aeb1;
+}
+#productdiv {
+  width: 100%;
+  height: 600px;
+
+  margin: auto;
+  margin-top: 20px;
+  background-color: #ffffff;
+}
+#productdiv h2 {
+  font-size: 18px;
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: 1px;
+  color: rgba(21, 27, 57, 0.6);
+  margin-left: 15px;
+  margin-top: 20px;
+}
+#productcarddiv {
+  width: 100%;
+
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 23%);
+  grid-gap: 10px;
+  justify-content: space-evenly;
+}
+#productcarddiv div {
+  border: 1px solid grey;
+  text-align: center;
+  border-radius: 15px;
+  background-color: #ffffff;
+  height: 320px;
+}
+#productcarddiv div p,
+h5 {
+  text-align: left;
+  padding-left: 10px;
+  margin-bottom: -0.03px;
+}
+#productcarddiv div h5 {
+  font-size: 14px;
+  color: #151b39;
+  font-weight: 600;
+  margin-top: 10px;
+}
+#productcarddiv div h5 + p {
+  font-style: italic;
+  color: #6f7284;
+  font-size: 13px;
+  margin-top: 5px;
+  font-weight: 400;
+}
+#productcarddiv div h5 + p + p {
+  color: #ef4281;
+  margin-top: 5px;
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 10px;
+}
+#productcarddiv button {
+  width: 80%;
+  background: rgb(36, 174, 177);
+  font-size: 14px;
+  border-radius: 4px;
+  color: #fff;
+
+  margin-top: 10px;
+  height: 40px;
+  border-radius: 5px;
+  box-shadow: none;
+  border: none;
+  border-color: rgb(36, 174, 177);
+}
+#productfilter {
+  width: 98%;
+  margin: auto;
+  background-color: #fff;
+  border-radius: 10px;
+}
+#productfilter h1 {
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  color: #151b39;
+  margin-bottom: 15px;
+  padding: 5px;
+}
+#input1categories {
+  width: 90%;
+  height: 20px;
+  font-size: 15px;
+  padding: 5px;
+  border-radius: 5px;
+}
+#input1categories + img {
+  position: relative;
+  top: -30px;
+  left: 85%;
+  background-color: #f2f3f3;
+  border-radius: 50%;
+}
+#categoriesscroll {
+  margin-top: -10px;
+  height: 250px;
+
+  overflow-y: scroll;
+  width: 90%;
+}
+#categoriesscroll span {
+  padding-left: 5px;
+  font-size: 15px;
+}
+#categoriesscroll span input {
+  margin-right: 10px;
+  margin-top: 5px;
+}
+hr {
+  width: 95%;
+  margin: auto;
+  color: rgba(0, 0, 0, 0.062);
+  margin-top: 15px;
+}
