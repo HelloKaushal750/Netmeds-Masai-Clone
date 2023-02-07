@@ -594,6 +594,7 @@ function checkboxmask() {
 }
 var chechbox1 = document.getElementById("Mask");
 chechbox1.addEventListener("click", checkboxmask);
+
 function checkboxreck() {
   if (chechbox1.checked === true) {
     displaydiv.innerHTML = null;
