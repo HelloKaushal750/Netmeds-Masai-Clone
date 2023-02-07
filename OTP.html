@@ -27,7 +27,7 @@
       </div>
       <div id="btn">
         <button type="submit" id="confirm">CONFIRM</button>
-        <button>Resend OTP</button>
+        <button id="resend">Resend OTP</button>
       </div>
     </div>
   </body>
@@ -47,8 +47,6 @@
       Fourth: document.getElementById("Fourth").value,
       Fifth: document.getElementById("Fifth").value,
     };
-    var arr = [];
-    arr.push(otp);
     
     if(document.getElementById("First").value === "" ||
     document.getElementById("Second").value === "" ||
@@ -59,17 +57,20 @@
         return;
     }
 
+    var arr = [];
+    arr.push(otp);
+
     document.getElementById("First").value = "";
     document.getElementById("Second").value = "";
     document.getElementById("Third").value = "";
     document.getElementById("Fourth").value = "";
     document.getElementById("Fifth").value = "";
 
-    var originalotp = JSON.parse(localStorage.getItem("OTP")) || [];
+    var originalotp = JSON.parse(localStorage.getItem("OTP"));
 
     var flag = true;
     arr.map(function (ele, index) {
-      if (ele.First !== originalotp[index]) {
+      if (ele.First !== originalotp[0] || ele.Second !== originalotp[1] || ele.Third !== originalotp[2] || ele.Fourth !== originalotp[3] || ele.Fifth !== originalotp[4]) {
         flag = false;
       }
     });
@@ -80,5 +81,11 @@
       var btn = document.getElementById("btn");
       btn.setAttribute("onclick", "window.location.href = 'thankyou.html'");
     }
+  }
+
+  document.getElementById("resend").addEventListener("click", sent);
+
+  function sent() {
+    alert("OTP successfully sent to your RMN.")
   }
 </script>

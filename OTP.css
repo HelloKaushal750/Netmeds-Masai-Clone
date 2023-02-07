@@ -2,7 +2,7 @@ Body {
   margin: 0;
   padding: 0;
   height: 100vh;
-  background: #1b95a0;
+  background-color: #f3f7fb;
 }
 
 .Container {
@@ -29,13 +29,14 @@ Input {
   font-family: Arimo;
   font-size: 20px;
   caret-color: transparent;
-  background: #eef2f3;
+  background: #1b95a0;
+  color: #f3f7fb;
 }
 
 H1 {
   text-align: Center;
   font-family: Arimo;
-  color: Honeydew;
+  color: #1b95a0;
 }
 #btn {
     display: flex;
@@ -59,7 +60,7 @@ button:hover {
   background-color: rgb(3, 90, 3);
 }
 #verify {
-    color: white;
+    color: rgb(25, 194, 25);
     text-align: center;
     font-size: 50px;
 }
@@ -68,7 +69,7 @@ button:hover {
     justify-content: center;
 }
 p {
-    margin-top: 50px;
+    margin-top: -10px;
     margin-bottom: -150px;
     font-size: 20px;
     width: 30%;

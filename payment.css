@@ -30,9 +30,10 @@ body {
 #left-div {
   background: #1b95a0;
   display: flex;
+  flex-direction: column;
   width: 50%;
   margin: 0;
-  padding: 0;
+  padding: 20px;
   color: white;
 }
 #right-div {
@@ -42,7 +43,7 @@ body {
 h2 {
   color: white;
   background-color: #1b95a0;
-  line-height: 50px;
+  line-height: 40px;
   margin-top: 0;
   padding-left: 10px;
 }
@@ -116,4 +117,50 @@ a {
   text-decoration: none;
   color: #1b95a0;
   margin-right: 10px;
+}
+table.scrolldown {
+  width: 100%;
+  border-collapse: collapse;
+}
+/* To display the block as level element */
+table.scrolldown tbody, table.scrolldown thead {
+  display: block;
+} 
+
+thead tr th {
+  height: 40px; 
+  line-height: 40px;
+}
+
+table.scrolldown tbody {
+  height: 350px; 
+  overflow-y: auto;
+  overflow-x: hidden; 
+}
+
+tbody td, thead th {
+  width : 200px;
+}
+
+td {
+  text-align:center;
+} 
+
+td {
+  border-bottom: 1px solid #f3f7fb;
+  padding: 10px;
+}
+thead {
+  background-color: #f3f7fb;
+  color: #1b95a0;
+}
+hr {
+  width: 100%;
+  margin-top: 20px;
+  border-top: 2px dashed #f3f7fb;
+}
+#bill {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px;
 }

@@ -8,15 +8,32 @@
     <link rel="stylesheet" href="payment.css" />
   </head>
   <body>
-    <div id="companylogo"><img src="Netmeds.png" alt="netmedslogo"></div>
+    <div id="companylogo"><img src="Netmeds.png" alt="netmedslogo" /></div>
     <div id="container">
       <div id="left-div">
-        <img src="" alt="" />
-        <table>
-          <tbody id="productlist"></tbody>
-        </table>
-        <p>Amount to Pay <span>0</span></p>
-        <p>Powered by <img src="" alt="" /></p>
+        <div>
+          <h2>Total Products :- <span id="totalproduct">0</span></h2>
+        </div>
+        <div>
+          <table class="scrolldown">
+            <thead>
+              <th>Product Name</th>
+              <th>Quantity</th>
+              <th>Price (₹)</th>
+            </thead>
+            <tbody id="productlist"></tbody>
+          </table>
+        </div>
+        <hr>
+        <div>
+          <div id="bill">
+            <h2>Bill Amount :</h2>
+            <h2 id="finalamount">0</h2>
+          </div>
+        </div>
+
+        <!-- <p>Amount to Pay <span>0</span></p>
+        <p>Powered by <img src="" alt="" /></p> -->
       </div>
       <div id="right-div">
         <h2>CARD DETAILS</h2>
@@ -67,14 +84,21 @@
               </select>
             </div>
             <div id="cvv">
-              <input type="password" placeholder="CVV" maxlength="3" id="CVV"/>
+              <input type="password" placeholder="CVV" maxlength="3" id="CVV" />
             </div>
           </div>
-          <input type="text" placeholder="Enter your registered mobile number" id="mobile" maxlength="10">
-          <input type="text" placeholder="Enter your name" id="Name"/>
+          <input
+            type="text"
+            placeholder="Enter your registered mobile number"
+            id="mobile"
+            maxlength="10"
+          />
+          <input type="text" placeholder="Enter your name" id="Name" />
           <button type="submit" id="btn">Proceed</button>
         </form>
-        <div id="link"><a href="https://www.netmeds.com/">www.netmeds.com</a></div>
+        <div id="link">
+          <a href="https://www.netmeds.com/">www.netmeds.com</a>
+        </div>
       </div>
     </div>
   </body>
