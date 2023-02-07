@@ -148,6 +148,7 @@ h5 {
   box-shadow: none;
   border: none;
   border-color: rgb(36, 174, 177);
+  cursor: pointer;
 }
 #productfilter {
   width: 98%;
