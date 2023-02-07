@@ -463,71 +463,69 @@ function checkboxpersonal() {
 var chechbox1 = document.getElementById("Personal & Home Essentials");
 chechbox1.addEventListener("click", checkboxpersonal);
 function checkboxbreatheeasy() {
-  if (chechbox1.checked === true) {
-    displaydiv.innerHTML = null;
-    parsed_data1.forEach(function (product) {
-      if (product.Category == "Breathe Easy") {
-        let div = document.createElement("div");
+  displaydiv.innerHTML = null;
+  parsed_data1.forEach(function (product) {
+    if (product.Category == "Breathe Easy") {
+      let div = document.createElement("div");
 
-        let p_image = document.createElement("img");
-        p_image.src = product.image;
+      let p_image = document.createElement("img");
+      p_image.src = product.image;
 
-        let p_name = document.createElement("h5");
-        p_name.innerText = product.name;
+      let p_name = document.createElement("h5");
+      p_name.innerText = product.name;
 
-        let company_name = document.createElement("p");
-        company_name.innerText = product.brand;
+      let company_name = document.createElement("p");
+      company_name.innerText = product.brand;
 
-        let p_price = document.createElement("p");
-        p_price.innerText = `Best price* Rs. ${product.price}`;
+      let p_price = document.createElement("p");
+      p_price.innerText = `Best price* Rs. ${product.price}`;
 
-        let btn = document.createElement("button");
-        btn.innerHTML = "ADD TO CART";
-        div.append(p_image, p_name, company_name, p_price, btn);
-        displaydiv.append(div);
+      let btn = document.createElement("button");
+      btn.innerHTML = "ADD TO CART";
+      div.append(p_image, p_name, company_name, p_price, btn);
+      displaydiv.append(div);
 
-        btn.onclick = function () {
-          addtoCart(product);
-        };
-      }
-    });
-  }
+      btn.onclick = function () {
+        addtoCart(product);
+      };
+    }
+  });
 }
-var chechbox1 = document.getElementById("Breathe Easy");
-chechbox1.addEventListener("click", checkboxbreatheeasy);
+
+var chechbox2 = document.getElementById("Breathe Easy");
+chechbox2.addEventListener("click", checkboxbreatheeasy);
 function checkboxbusiness() {
-  if (chechbox1.checked === true) {
-    displaydiv.innerHTML = null;
-    parsed_data1.forEach(function (product) {
-      if (product.Category == "Business Essentials") {
-        let div = document.createElement("div");
+  displaydiv.innerHTML = null;
+  parsed_data1.forEach(function (product) {
+    if (product.Category == "Business Essentials") {
+      let div = document.createElement("div");
 
-        let p_image = document.createElement("img");
-        p_image.src = product.image;
+      let p_image = document.createElement("img");
+      p_image.src = product.image;
 
-        let p_name = document.createElement("h5");
-        p_name.innerText = product.name;
+      let p_name = document.createElement("h5");
+      p_name.innerText = product.name;
 
-        let company_name = document.createElement("p");
-        company_name.innerText = product.brand;
+      let company_name = document.createElement("p");
+      company_name.innerText = product.brand;
 
-        let p_price = document.createElement("p");
-        p_price.innerText = `Best price* Rs. ${product.price}`;
+      let p_price = document.createElement("p");
+      p_price.innerText = `Best price* Rs. ${product.price}`;
 
-        let btn = document.createElement("button");
-        btn.innerHTML = "ADD TO CART";
-        div.append(p_image, p_name, company_name, p_price, btn);
-        displaydiv.append(div);
+      let btn = document.createElement("button");
+      btn.innerHTML = "ADD TO CART";
+      div.append(p_image, p_name, company_name, p_price, btn);
+      displaydiv.append(div);
 
-        btn.onclick = function () {
-          addtoCart(product);
-        };
-      }
-    });
-  }
+      btn.onclick = function () {
+        addtoCart(product);
+      };
+    }
+  });
 }
-var chechbox1 = document.getElementById("Business Essentials");
-chechbox1.addEventListener("click", checkboxbusiness);
+
+var chechbox3 = document.getElementById("Business Essentials");
+chechbox3.addEventListener("click", checkboxbusiness);
 function checkboxmeasure() {
   if (chechbox1.checked === true) {
     displaydiv.innerHTML = null;
@@ -559,108 +557,105 @@ function checkboxmeasure() {
     });
   }
 }
-var chechbox1 = document.getElementById("Measurements");
-chechbox1.addEventListener("click", checkboxmeasure);
+var chechbox4 = document.getElementById("Mask");
+chechbox4.addEventListener("click", checkboxmeasure);
 function checkboxmask() {
-  if (chechbox1.checked === true) {
-    displaydiv.innerHTML = null;
-    parsed_data1.forEach(function (product) {
-      if (product.Category == "Mask") {
-        let div = document.createElement("div");
+  displaydiv.innerHTML = null;
+  parsed_data1.forEach(function (product) {
+    if (product.Category == "Mask") {
+      let div = document.createElement("div");
 
-        let p_image = document.createElement("img");
-        p_image.src = product.image;
+      let p_image = document.createElement("img");
+      p_image.src = product.image;
 
-        let p_name = document.createElement("h5");
-        p_name.innerText = product.name;
+      let p_name = document.createElement("h5");
+      p_name.innerText = product.name;
 
-        let company_name = document.createElement("p");
-        company_name.innerText = product.brand;
+      let company_name = document.createElement("p");
+      company_name.innerText = product.brand;
 
-        let p_price = document.createElement("p");
-        p_price.innerText = `Best price* Rs. ${product.price}`;
+      let p_price = document.createElement("p");
+      p_price.innerText = `Best price* Rs. ${product.price}`;
 
-        let btn = document.createElement("button");
-        btn.innerHTML = "ADD TO CART";
-        div.append(p_image, p_name, company_name, p_price, btn);
-        displaydiv.append(div);
+      let btn = document.createElement("button");
+      btn.innerHTML = "ADD TO CART";
+      div.append(p_image, p_name, company_name, p_price, btn);
+      displaydiv.append(div);
 
-        btn.onclick = function () {
-          addtoCart(product);
-        };
-      }
-    });
-  }
+      btn.onclick = function () {
+        addtoCart(product);
+      };
+    }
+  });
 }
-var chechbox1 = document.getElementById("Mask");
-chechbox1.addEventListener("click", checkboxmask);
+
+var chechbox5 = document.getElementById("Mask");
+chechbox5.addEventListener("click", checkboxmask);
 
 function checkboxreck() {
-  if (chechbox1.checked === true) {
-    displaydiv.innerHTML = null;
-    parsed_data1.forEach(function (product) {
-      if (product.brand == "Mkt: Reckitt Benckiser India Ltd") {
-        let div = document.createElement("div");
+  displaydiv.innerHTML = null;
+  parsed_data1.forEach(function (product) {
+    if (product.brand == "Mkt: Reckitt Benckiser India Ltd") {
+      let div = document.createElement("div");
 
-        let p_image = document.createElement("img");
-        p_image.src = product.image;
+      let p_image = document.createElement("img");
+      p_image.src = product.image;
 
-        let p_name = document.createElement("h5");
-        p_name.innerText = product.name;
+      let p_name = document.createElement("h5");
+      p_name.innerText = product.name;
 
-        let company_name = document.createElement("p");
-        company_name.innerText = product.brand;
+      let company_name = document.createElement("p");
+      company_name.innerText = product.brand;
 
-        let p_price = document.createElement("p");
-        p_price.innerText = `Best price* Rs. ${product.price}`;
+      let p_price = document.createElement("p");
+      p_price.innerText = `Best price* Rs. ${product.price}`;
 
-        let btn = document.createElement("button");
-        btn.innerHTML = "ADD TO CART";
-        div.append(p_image, p_name, company_name, p_price, btn);
-        displaydiv.append(div);
+      let btn = document.createElement("button");
+      btn.innerHTML = "ADD TO CART";
+      div.append(p_image, p_name, company_name, p_price, btn);
+      displaydiv.append(div);
 
-        btn.onclick = function () {
-          addtoCart(product);
-        };
-      }
-    });
-  }
+      btn.onclick = function () {
+        addtoCart(product);
+      };
+    }
+  });
 }
-var chechbox1 = document.getElementById("Mkt: Reckitt Benckiser India Ltd");
-chechbox1.addEventListener("click", checkboxreck);
+
+var chechbox6 = document.getElementById("Mkt: Reckitt Benckiser India Ltd");
+chechbox6.addEventListener("click", checkboxreck);
 function checkboxltc() {
-  if (chechbox1.checked === true) {
-    displaydiv.innerHTML = null;
-    parsed_data1.forEach(function (product) {
-      if (product.brand == "Mkt: Itc India Ltd") {
-        let div = document.createElement("div");
+  displaydiv.innerHTML = null;
+  parsed_data1.forEach(function (product) {
+    if (product.brand == "Mkt: Itc India Ltd") {
+      let div = document.createElement("div");
 
-        let p_image = document.createElement("img");
-        p_image.src = product.image;
+      let p_image = document.createElement("img");
+      p_image.src = product.image;
 
-        let p_name = document.createElement("h5");
-        p_name.innerText = product.name;
+      let p_name = document.createElement("h5");
+      p_name.innerText = product.name;
 
-        let company_name = document.createElement("p");
-        company_name.innerText = product.brand;
+      let company_name = document.createElement("p");
+      company_name.innerText = product.brand;
 
-        let p_price = document.createElement("p");
-        p_price.innerText = `Best price* Rs. ${product.price}`;
+      let p_price = document.createElement("p");
+      p_price.innerText = `Best price* Rs. ${product.price}`;
 
-        let btn = document.createElement("button");
-        btn.innerHTML = "ADD TO CART";
-        div.append(p_image, p_name, company_name, p_price, btn);
-        displaydiv.append(div);
+      let btn = document.createElement("button");
+      btn.innerHTML = "ADD TO CART";
+      div.append(p_image, p_name, company_name, p_price, btn);
+      displaydiv.append(div);
 
-        btn.onclick = function () {
-          addtoCart(product);
-        };
-      }
-    });
-  }
+      btn.onclick = function () {
+        addtoCart(product);
+      };
+    }
+  });
 }
-var chechbox1 = document.getElementById("Mkt: Itc India Ltd");
-chechbox1.addEventListener("click", checkboxltc);
+
+var chechbox7 = document.getElementById("Mkt: Itc India Ltd");
+chechbox7.addEventListener("click", checkboxltc);
 var total_cart_product = 0;
 var totacartdisplay = document.getElementById("carttoal");
 function addtoCart(el) {
