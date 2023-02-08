@@ -196,7 +196,55 @@
     margin-top: 16px
  }
 
- @media only screen and(max-width: 600px){
-    
+.productsDisplay{
+    width: 1496px;
+    height: 501.3px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(180deg,#24aeb1 40%,rgb(237, 239, 252) 30%);
+    color: white;
+    margin-top: 20px;
+}
 
- }
+.productsDisplay > h2{
+    padding-left: 48px;
+}
+
+.swiper-container{
+    width: 1308px ;
+    height: 437.3px ;
+    padding-left: 98px;
+    display: flex;
+}
+
+.pro-card{
+    width: 255.2px;
+    height: 393.3px;
+    background-color: white;
+    border-radius: 8px;
+    margin-right: 16px;
+}
+
+.footer{
+    margin-top: 20px;
+    padding: 30px 200px;
+    background: white;
+}
+
+.classfooter{
+    display: flex;
+    align-items: center;
+}
+
+.classfooter > img{
+    width: 180px;
+    height: 39.33px;
+    padding-right: 108px;
+}
+
+.classfooter > p{
+    width: 618px;
+    height: 62px;
+    font-size: 18px;
+    /* margin-left: 28px; */
+}
