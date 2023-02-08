@@ -24,7 +24,7 @@ function carddata() {
     var btn = document.getElementById("btn");
     btn.setAttribute("onclick", "window.location.href = 'OTP.html'");
   } else {
-    alert("Not getting account details");
+    alert("Not getting account details. Try this: CardNo.111111111111, CVV.123, Mob.no.999999999");
   }
 }
 
@@ -52,5 +52,5 @@ function displayItems() {
   });
 }
 
-var finalamt = JSON.parse(localStorage.getItem("Amount"));
+var finalamt = localStorage.getItem("Amount");
 document.getElementById("finalamount").textContent = "₹ "+finalamt;
