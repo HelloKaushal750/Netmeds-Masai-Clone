@@ -65,18 +65,27 @@ button > label {
   padding-left: 28px;
   color: white;
   font-size: 20px;
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
 }
 
 .cart {
   padding-left: 28px;
   color: white;
   font-size: 20px;
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
 }
 
 .signIn {
   padding-left: 28px;
   color: white;
   font-size: 20px;
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
 }
 
 /* Slideshow container */
