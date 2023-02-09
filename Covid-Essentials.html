@@ -5,73 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./products.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
     <title>Covid Essentials Page</title>
   </head>
 
   <body>
-    <div id="header">
-      <!-- hederPanel1 start-->
-      <div id="divPanel1">
-        <div id="panel1img1">
-          <a href="home.html">
-            <img
-              src="https://www.netmeds.com/assets/gloryweb/images/home-logo-netmeds-new.svg"
-              alt=""
-          /></a>
+    <div class="holepage">
+      <header class="page-header">
+        <div class="logo">
+            <img src="https://nms-assets.s3-ap-south-1.amazonaws.com/images/cms/aw_rbslider/slides/1663609483_netmeds-new-logo.svg" alt="">
         </div>
-        <div id="searchbox">
-          <div id="searchbar">
-            <label for="">Deliver to</label>
-            <select name="city" id="city">
-              <option value="bengaluru">110001</option>
-              <option value="delhi">411015</option>
-              <option value="pune">110022</option>
-              <option value="mumbai">411015</option>
-            </select>
-          </div>
-          <div id="horizontalline">
-            <p>|</p>
-          </div>
-          <div id="searchInput">
-            <input
-              type="text"
-              placeholder="Search for medicine & wellnes Products..."
-            />
-          </div>
+        <div class="search-bar">
+            <input type="text">
         </div>
-        <div id="loadpx">
-          <img src="projectimage\Capture.JPG" alt="" />
-          <a>Upload Rx</a>
+        <div class="upload">
+            <p></p>
         </div>
-        <div id="cartlogo">
-          <img src="projectimage\cart.JPG" alt="" />
-          <a>Cart</a>
-          <a href="#">
-            <a href="./cart.html">
-              <div id="carttoal"></div>
-            </a>
-          </a>
+        <div class="cart">
+            <p>Cart</p>
         </div>
-        <div id="singuplogo">
-          <img src="projectimage\signin.JPG" alt="" />
-          <a href="signup.html">User</a>
+        <div class="signIn">
+            <p>Sign in / Sign up</p>
         </div>
-      </div>
-    </div>
+    </header>
     <!-- hederend end-->
-    <!-- div 1 start-->
-    <div id="div1">
-      <a href="#">COVID Essentials</a>
-      <a href="#">Diabetes</a>
-      <a href="#">Veternary</a>
-      <a href="#">Eyewear</a>
-      <a href="#">Ayush</a>
-      <a href="#">Ayurvedic</a>
-      <a href="#">Devices</a>
-      <a href="#">Surgicial</a>
-      <a href="#">Sexual wellnes</a>
-      <a href="#">Treatment</a>
+    <!-- 2nd header -->
+    <div class="menu">
+      <p>Medicine</p>
+      <p>Wellness</p>
+      <p>Lab Test</p>
+      <p>Beauty</p>
+      <p>Health Care</p>
     </div>
+    <!-- End  -->
+    <!-- div 1 start-->
+    <div class="nav-sections">
+      <ul>
+          <li>Covid Essentials</li>
+          <li>Diabetes</li>
+          <li>Veterinary</li>
+          <li>Eyewear</li>
+          <li>Ayush</li>
+          <li>Ayurvedic</li>
+          <li>Homeopathy</li>
+          <li>Fitness</li>
+          <li>Mom & Baby</li>
+          <li>Devices</li>
+          <li>Surgicals</li>
+          <li>Sexual Wellness</li>
+          <li>Treatements</li>
+      </ul>
+  </div>
     <!-- div 1 end-->
 
     <!-- conatiner product start-->
@@ -335,7 +319,9 @@
         </div>
       </div>
       <div id="product_right_container">
-        <div id="productcontainer_slide"></div>
+        <div id="productcontainer_slide">
+          <img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1673286634_1000x200.jpg" alt="">
+        </div>
         <div id="productfilterdiv">
           <div id="sortdiv">
             <h3>Sortby:</h3>
@@ -351,6 +337,7 @@
         </div>
       </div>
     </div>
+  </div>
   </body>
 </html>
 <script src="./products.js"></script>

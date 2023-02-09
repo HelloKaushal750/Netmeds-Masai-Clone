@@ -1,18 +1,88 @@
-#div1 {
-  display: flex;
-  flex-direction: row;
-  width: 70%;
-  margin: auto;
-  justify-content: space-between;
-  margin-top: 160px;
-}
-#div1 a {
-  text-decoration: none;
-  color: #151b39;
-  font-size: 15px;
-  padding: 10px;
+.holepage{
+  width: 1496px;
+  background-color: rgb(237, 239, 252);
+  /* background-color: #f3f3f3; */
+  height: 3422.96px;
 }
 
+/* Header */
+.page-header{
+  display: flex;
+  width: 1496px;
+  height: 90px;
+  background-color: #32aeb1;
+  align-items: center;
+}
+.logo{
+  width: 168px;
+  height: 60px;
+  padding-left: 120px;
+  margin-right: 12px;
+  
+}
+.logo > img{
+ width: 165px;
+ height: 60px;
+}
+
+.search-bar > input{
+  width: 670px;
+  height: 48px;
+  border-radius: 12px;
+}
+
+.upload{
+  color: white;
+  width: 85px;
+ 
+}
+
+.cart{
+  padding-left: 28px;
+  color: white;
+  font-size: 20px;
+  font-family: 'Lato', sans-serif;
+}
+
+.signIn{
+  padding-left: 28px;
+  color: white;
+  font-size: 20px;
+  font-family: 'Lato', sans-serif;
+}
+/* Header end */
+/* Header 2nd */
+.menu{
+  width: 1496px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #32aeb1 ;    
+}
+
+.menu > p{
+  display: flex;
+  color: white;
+  font-size: 22px;
+  padding: 0 70px;
+  font-family: 'Lato', sans-serif;
+}
+/* End */
+
+/* Covid Essentials */
+.nav-sections > ul{
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  height: 50px;
+  align-items: center;
+  background-color: white;
+  
+}
+/* End */
 #productmaincontainer {
   width: 98%;
   height: 1400px;
@@ -22,20 +92,26 @@
   display: flex;
   flex-direction: row;
 }
+
+
 #product_left_container {
-  width: 20%;
-  height: 1200px;
+  width: 270.84px;
+  height: 344.8px;
 }
+
+
 #product_right_container {
   width: 80%;
   height: 1200px;
+  background-color: rgb(237, 239, 252);
 
   margin-left: 20px;
 }
 #productcontainer_slide {
-  width: 100%;
-  height: 200px;
+  width: 1163.88px;
+  height: 232.99px;
   margin: auto;
+
 }
 #productcontainer_slide img {
   width: 100%;
@@ -50,15 +126,21 @@
 }
 #sortdiv {
   display: flex;
-  flex-direction: row;
+  align-items: center;
+  /* flex-direction: row;
   position: absolute;
   right: 10px;
-  top: 45%;
+  top: 45%; */
+  justify-content: right;
+  margin-right: 20px;
+
 }
 #sortdiv h3 {
   font-family: Lato;
   color: #151b39;
   font-weight: 400;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 #sortdiv button {
   cursor: pointer;
@@ -66,9 +148,11 @@
   margin-left: 5px;
   background: #ffffff;
   height: 25px;
+  border: solid 1px rgba(112,112,112,.38);
   width: 100px;
   border-radius: 10px;
   box-shadow: none;
+
 }
 #sortdiv button:hover {
   color: #24aeb1;
@@ -83,31 +167,40 @@
   background-color: #ffffff;
 }
 #productdiv h2 {
-  font-size: 18px;
+  height: 58.84px;
+  font-size: 13px;
   font-weight: 700;
   font-style: normal;
   font-stretch: normal;
   line-height: 1.33;
   letter-spacing: 1px;
-  color: rgba(21, 27, 57, 0.6);
-  margin-left: 15px;
-  margin-top: 20px;
+  color: rgba(21,27,57,.6);
+  padding-left: 20px;
+  margin: 0;
+  /* background-color: rgb(237, 239, 252); */
+  background-color: white;
+  display: flex;
+  align-items: center;
 }
 #productcarddiv {
   width: 100%;
-
-  margin-top: 20px;
+  background-color: white;
+  /* background-color: rgb(237, 239, 252); */
+  /* margin-top: 20px; */
+  padding-top: 10px;
+  padding-bottom: 10px;
   display: grid;
   grid-template-columns: repeat(4, 23%);
   grid-gap: 10px;
   justify-content: space-evenly;
 }
 #productcarddiv div {
-  border: 1px solid grey;
+  border: solid 1px rgba(112,112,112,.38);
   text-align: center;
   border-radius: 15px;
   background-color: #ffffff;
   height: 320px;
+  padding-top: 10px;
 }
 #productcarddiv div p,
 h5 {
@@ -120,6 +213,10 @@ h5 {
   color: #151b39;
   font-weight: 600;
   margin-top: 10px;
+  width: 240.36px;
+  height: 42px;
+  display: flex;
+  align-items: center;
 }
 #productcarddiv div h5 + p {
   font-style: italic;
@@ -127,13 +224,16 @@ h5 {
   font-size: 13px;
   margin-top: 5px;
   font-weight: 400;
+  width: 240.36px;
+  height: 16px;
 }
 #productcarddiv div h5 + p + p {
+  width: 240.36px;
+  height: 28.4px;
   color: #ef4281;
   margin-top: 5px;
   font-weight: 700;
-  text-align: center;
-  padding-bottom: 10px;
+  align-items: center;
 }
 #productcarddiv button {
   width: 80%;
@@ -157,12 +257,15 @@ h5 {
   border-radius: 10px;
 }
 #productfilter h1 {
-  font-size: 20px;
+  /* font-family: 20px; */
   font-weight: 400;
+  font-size: 20px;
   font-style: normal;
   color: #151b39;
   margin-bottom: 15px;
   padding: 5px;
+  padding-left: 20px;
+  font-family: 'Lato', sans-serif;
 }
 #input1categories {
   width: 90%;
@@ -196,6 +299,16 @@ h5 {
 hr {
   width: 95%;
   margin: auto;
-  color: rgba(0, 0, 0, 0.062);
+  /* color: rgba(0, 0, 0, 0.062); */
+  color:solid 1px rgba(112,112,112,.38) ;
   margin-top: 15px;
+  /* border: solid 1px rgba(112,112,112,.38); */
+
+}
+
+
+/* Covid Essentials Header */
+
+header{
+  
 }
