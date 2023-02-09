@@ -33,8 +33,14 @@ body {
   flex-direction: column;
   width: 50%;
   margin: 0;
-  padding: 20px;
+  /* margin-top: -17px; */
+  padding: 0 20px 20px 20px;
   color: white;
+}
+#heading1 {
+  display: block;
+  /* justify-content: space-between; */
+  
 }
 #right-div {
   width: 50%;
@@ -45,7 +51,6 @@ h2 {
   background-color: #1b95a0;
   line-height: 40px;
   margin-top: 0;
-  padding-left: 10px;
 }
 #cardlogo {
   display: flex;

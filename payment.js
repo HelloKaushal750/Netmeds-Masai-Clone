@@ -52,5 +52,6 @@ function displayItems() {
   });
 }
 
-var finalamt = localStorage.getItem("Amount");
-document.getElementById("finalamount").textContent = "₹ "+finalamt;
+var finalamt = JSON.parse(localStorage.getItem("Amount"));
+var amt = finalamt.toFixed(2);
+document.getElementById("finalamount").textContent = "₹ "+amt;

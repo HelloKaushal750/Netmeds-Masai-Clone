@@ -110,6 +110,7 @@ function deleteFun(index) {
   console.log(cart_data);
   addproduct(cart_data);
   calcTotal();
+  document.getElementById("lblCartCount").textContent = cart_data.length;
 }
 
 function calcTotal() {
@@ -208,3 +209,5 @@ function checkcode() {
     alert("Invalid Promo Code / Already applied promo code to the Total Price");
   }
 }
+
+document.getElementById("lblCartCount").textContent = cart_data.length;
