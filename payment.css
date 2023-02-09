@@ -221,6 +221,7 @@ hr {
     display: flex;
     flex-direction: column;
   }
+  /* responsive updated */
   input {
     height: 25px;
   }
