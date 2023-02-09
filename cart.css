@@ -6,12 +6,13 @@ body {
 }
 .page-header {
   display: flex;
-  width: 1550px;
+  width: 100%;
   height: 90px;
+  justify-content: safe;
   background-color: #32aeb1;
   align-items: center;
 }
-.page-header>div {
+.page-header > div {
   cursor: pointer;
 }
 .logo {
@@ -227,7 +228,7 @@ button > label {
   border: none;
   font-size: 15px;
 }
-#delivery-rem>button:hover {
+#delivery-rem > button:hover {
   border: 3px solid grey;
   cursor: pointer;
 }
@@ -293,7 +294,7 @@ button > label {
   margin: 20px 100px;
 }
 #paybtn > button {
-    width: 300px;
+  width: 300px;
   height: 40px;
   border: none;
   border-radius: 20px;
@@ -307,4 +308,121 @@ button > label {
 #paybtn > button:hover {
   border: 3px solid #717171;
   scale: 1.2;
+}
+@media all and (min-width: 401px) and (max-width: 700px) {
+  .search-bar {
+    display: none;
+  }
+  #cartdiv {
+    width: 90%;
+    margin: auto;
+  }
+  #ordercarddiv {
+    display: flex;
+    flex-flow: column;
+  }
+  #orderleftdiv {
+    width: 100%;
+  }
+  #orderrightdiv {
+    width: 100%;
+  }
+  #img-prod > div > img {
+    width: 50%;
+    height: 80px;
+  }
+  #price-quan {
+    margin: 0;
+    padding: 0;
+  }
+  #delivery-rem {
+    margin: 0;
+    padding: 0;
+  }
+}
+@media all and (min-width: 701px) and (max-width: 900px) {
+  .search-bar {
+    display: none;
+  }
+  #cartdiv {
+    width: 90%;
+    margin: auto;
+  }
+  #orderleftdiv {
+    width: 60%;
+  }
+  #orderrightdiv {
+    width: 40%;
+    /* display: flex;
+    flex-flow: column; */
+  }
+  #img-prod > div > img {
+    width: 50%;
+    height: 80px;
+  }
+  #price-quan {
+    margin: 0;
+    padding: 0;
+  }
+  #delivery-rem {
+    margin: 0;
+    padding: 0;
+  }
+}
+@media all and (max-width: 400px) {
+  .page-header {
+    display: flex;
+    justify-content: center;
+  }
+  .search-bar {
+    display: none;
+  }
+  .logo {
+    display: none;
+  }
+  #cartdiv {
+    width: 100%;
+    margin: auto;
+  }
+  #ordercarddiv {
+    display: flex;
+    flex-flow: column;
+  }
+  #orderleftdiv {
+    width: 100%;
+  }
+  #orderrightdiv {
+    width: 100%;
+  }
+  #displayCartProduct {
+    display: flex;
+    flex-direction: column;
+  }
+  #img-prod {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+  #img-prod > div > img {
+    width: 30%;
+    height: 60px;
+  }
+  #price-quan {
+    flex-direction: row;
+    margin: 0;
+    margin-top: -20px;
+    padding: 0;
+    align-items: center;
+  }
+  #delivery-rem {
+    flex-direction: column;
+    margin: 0;
+    margin-top: -10px;
+    padding: 0;
+  }
+  hr {
+    width: 100%;
+    border: 2px solid grey;
+  }
 }

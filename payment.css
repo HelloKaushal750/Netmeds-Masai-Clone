@@ -72,7 +72,7 @@ input::placeholder {
 }
 #datecvv {
   display: flex;
-  justify-content: last baseline;
+  justify-content: baseline;
 }
 select {
   height: 45px;
@@ -163,4 +163,71 @@ hr {
   display: flex;
   justify-content: space-evenly;
   margin: 20px;
+}
+
+
+@media all and (min-width: 451px) and (max-width: 1000px) {
+  #container {
+    width: 90%;
+  }
+  input {
+    height: 25px;
+  }
+  select {
+    display: flex;
+    height: 28px;
+    margin-left: -58px;
+    padding: 0;
+  }
+  #date {
+    display: flex;
+    justify-content: space-between;
+    padding-left: -50px;
+  }
+  #datecvv {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;;
+    justify-content: left;
+  }
+}
+
+@media all and (max-width: 450px) {
+  #container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  #left-div {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  #right-div {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  #data {
+    margin: 0;
+    padding: 10px;
+  }
+  input {
+    width: 90%;
+  }
+  #datecvv {
+    display: flex;
+    flex-direction: column;
+  }
+  input {
+    height: 25px;
+  }
+  select {
+    display: flex;
+    height: 28px;
+    margin-left: -75px;
+    padding: 0;
+  }
 }
