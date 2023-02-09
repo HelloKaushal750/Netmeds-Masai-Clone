@@ -1,5 +1,6 @@
 localStorage.setItem("CardNumber", "111111111111");
 localStorage.setItem("CVV", "123");
+localStorage.setItem("MobileNum","9999999999");
 
 document.getElementById("data").addEventListener("submit", carddata);
 
@@ -19,8 +20,9 @@ function carddata() {
 
   var cdNumber = localStorage.getItem("CardNumber");
   var cv = localStorage.getItem("CVV");
+  var mob = localStorage.getItem("MobileNum");
 
-  if (cdNumber === cardNum && cv === cvv) {
+  if (cdNumber === cardNum && cv === cvv && mob===mobile) {
     var btn = document.getElementById("btn");
     btn.setAttribute("onclick", "window.location.href = 'OTP.html'");
   } else {

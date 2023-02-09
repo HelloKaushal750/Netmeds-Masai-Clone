@@ -356,6 +356,14 @@ button > label {
     padding: 0;
   }
 }
+@media all and (max-width: 1287px) {
+  .badge {
+    display: none;
+  }
+  #lblCartCount {
+    display: none;
+  }
+}
 @media all and (min-width: 701px) and (max-width: 900px) {
   .search-bar {
     display: none;
