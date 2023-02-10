@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MedicBuilders.com</title>
+    <link rel="icon" type="images/x-icon" href="https://bstudio-assets.azureedge.net/assets-builder/uploads/application/new_app_builder_icon/5b8cd7920b82ec2d09173049/Netmeds.svg" sizes="96x96"/>
+    <style>
+      #loading {
+        width: 100%;
+        height: 100vh;
+        background: #ffffff url('Molecular DNA.gif') no-repeat center;
+        position: fixed;
+        z-index: 99999;
+      }
+      body {
+        background-image: url('data:image/jpeg;base64,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');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      #companylogo {
+        display: flex;
+        justify-content: right;
+        height: 90px;
+        margin-top: -30px;
+        margin-bottom: -30px;
+      }
+      #companylog0 img {
+        height: 20px;
+      }
+      #container {
+        display: flex;
+        flex-flow: column;
+        width: 40%;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        margin-top: 50px;
+        background-color: #f3f7fb;
+        border-radius: 20px 20px 20px 20px;
+        box-shadow: 10px 15px 15px rgb(191, 189, 189);
+      }
+      #logo {
+        background-color: #1b95a0;
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+        text-align: center;
+        margin: 0;
+        padding: 20px 0;
+        font-size: 100px;
+        color: #f3f7fb;
+      }
+      button {
+        width: 30%;
+        height: 40px;
+        margin: auto;
+        margin-top: 30px;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        background-color: #1b95a0;
+        color: white;
+        font-size: 16px;
+        padding: 10px 0;
+        margin-bottom: 20px;
+      }
+      button:hover {
+        background-color: #066169;
+      }
+      h1 {
+        color: #1b95a0;
+      }
+    </style>
+  </head>
+  <body onload="myFunction()">
+    <div id="loading"></div>
+    <div id="companylogo">
+      <img
+        src="https://nms-assets.s3-ap-south-1.amazonaws.com/images/cms/aw_rbslider/slides/1663609483_netmeds-new-logo.svg"
+        alt="netmedslogo"
+      />
+    </div>
+    <div id="container">
+      <h1 id="logo"><i class="fa-regular fa-circle-check"></i></h1>
+      <h1>Your Payment is Successful !</h1>
+      <p>
+        Thankyou for your payment. An automated receipt will be sent to your
+        registered email.
+      </p>
+      <button onclick="window.location.href='index.html'">
+        Back to Home
+      </button>
+    </div>
+  </body>
+  <script>
+    var preloader = document.getElementById("loading");
+
+    function myFunction() {
+        preloader.style.display ='none';
+    }
+  </script>
+</html>
+<script
+  src="https://kit.fontawesome.com/3244e8e1e6.js"
+  crossorigin="anonymous"
+></script>
+

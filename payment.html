@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MedicBuilders.com</title>
+    <link rel="stylesheet" href="payment.css" />
+    <link rel="icon" type="images/x-icon" href="https://bstudio-assets.azureedge.net/assets-builder/uploads/application/new_app_builder_icon/5b8cd7920b82ec2d09173049/Netmeds.svg" sizes="96x96"/>
+  </head>
+  <body>
+    <div id="companylogo">
+      <img src="Netmeds.png" alt="netmedslogo" />
+    </div>
+    <div id="container">
+      <div id="left-div">
+        <div id="heading1">
+          <h2>ORDER REVIEW</h2>
+          <h3>Total Products :- <span id="totalproduct">0</span></h3>
+        </div>
+        <div>
+          <table class="scrolldown">
+            <thead>
+              <th>Product Name</th>
+              <th>Quantity</th>
+              <th>Price (₹)</th>
+            </thead>
+            <tbody id="productlist"></tbody>
+          </table>
+        </div>
+        <hr>
+        <div>
+          <div id="bill">
+            <h2>Bill Amount :</h2>
+            <h2 id="finalamount"></h2>
+          </div>
+        </div>
+
+        <!-- <p>Amount to Pay <span>0</span></p>
+        <p>Powered by <img src="" alt="" /></p> -->
+      </div>
+      <div id="right-div">
+        <h2>CARD DETAILS</h2>
+        <div id="cardlogo">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Mastercard_2019_logo.svg/800px-Mastercard_2019_logo.svg.png"
+            alt="master card"
+          />
+          <img
+            src="https://w7.pngwing.com/pngs/371/4/png-transparent-visa-debit-card-credit-card-logo-mastercard-visa-text-trademark-logo.png"
+            alt="visa"
+          />
+          <img
+            src="https://w7.pngwing.com/pngs/123/955/png-transparent-india-rupay-debit-card-bank-credit-card-india-text-trademark-logo.png"
+            alt="rupay"
+          />
+        </div>
+        <form id="data">
+          <input
+            type="text"
+            maxlength="12"
+            placeholder="Enter your card number"
+            id="cardNum"
+          />
+          <div id="datecvv">
+            <div id="date">
+              <select id="Month">
+                <option value="January">January</option>
+                <option value="February">February</option>
+                <option value="March">March</option>
+                <option value="April">April</option>
+                <option value="May">May</option>
+                <option value="June">June</option>
+                <option value="July">July</option>
+                <option value="August">August</option>
+                <option value="September">September</option>
+                <option value="October">October</option>
+                <option value="November">November</option>
+                <option value="December">December</option>
+              </select>
+              <select id="Year">
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+                <option value="2026">2026</option>
+                <option value="2027">2027</option>
+                <option value="2028">2028</option>
+              </select>
+            </div>
+            <div id="cvv">
+              <input type="password" placeholder="CVV" maxlength="3" id="CVV" />
+            </div>
+          </div>
+          <input
+            type="text"
+            placeholder="Enter your registered mobile number"
+            id="mobile"
+            maxlength="10"
+          />
+          <input type="text" placeholder="Enter your name" id="Name" />
+          <button type="submit" id="btn">Proceed</button>
+        </form>
+        <div id="link">
+          <a href="https://www.netmeds.com/">www.netmeds.com</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="payment.js"></script>
