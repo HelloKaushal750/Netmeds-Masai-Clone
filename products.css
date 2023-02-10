@@ -123,6 +123,10 @@ button > label {
   justify-content: center;
   align-items: center;
   background-color: #32aeb1;
+  cursor: pointer;
+}
+.menu :hover {
+  scale:1.1;
 }
 
 .menu > p {
@@ -144,6 +148,10 @@ button > label {
   height: 50px;
   align-items: center;
   background-color: white;
+  cursor: pointer;
+}
+.nav-sections > ul :hover {
+  scale: 1.1;
 }
 /* End */
 #productmaincontainer {

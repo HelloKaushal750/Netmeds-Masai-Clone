@@ -26,7 +26,7 @@ function carddata() {
     var btn = document.getElementById("btn");
     btn.setAttribute("onclick", "window.location.href = 'OTP.html'");
   } else {
-    alert("Not getting account details. Try this: CardNo.111111111111, CVV.123, Mob.no.999999999");
+    alert("Not getting account details. Try this: CardNo.111111111111, CVV.123, Mob.no.9999999999");
   }
 }
 
