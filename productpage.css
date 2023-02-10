@@ -1,0 +1,147 @@
+.holepage {
+  /* width: 1496px;
+    background-color: rgb(237, 239, 252); */
+  /* background-color: #f3f3f3; */
+  /* height: 3422.96px; */
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f6f6f7;
+  width: 100%;
+}
+.page-header {
+  display: flex;
+  width: 100%;
+  height: 90px;
+  justify-content: safe;
+  background-color: #32aeb1;
+  align-items: center;
+}
+.page-header > div {
+  cursor: pointer;
+}
+.logo {
+  width: 168px;
+  height: 60px;
+  padding-left: 120px;
+  margin-right: 12px;
+}
+.logo > img {
+  width: 165px;
+  height: 60px;
+}
+
+.search-bar > button {
+  display: flex;
+  align-items: baseline;
+  width: 670px;
+  height: 48px;
+  border-radius: 8px;
+  padding: 10px;
+  gap: 15px;
+  background-color: #ffffff;
+  border: none;
+}
+.page-header input {
+  width: 70%;
+  border: none;
+
+  font-size: 15px;
+}
+input:focus {
+  outline: none;
+}
+#city {
+  font-size: 18px;
+  border: none;
+  color: #32aeb1;
+  margin-left: -15px;
+}
+button > label {
+  font-size: 15px;
+  color: grey;
+}
+#line {
+  font-size: 20px;
+  color: rgb(162, 160, 160);
+}
+
+.upload {
+  margin-left: 20px;
+  padding-left: 28px;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.cart {
+  padding-left: 28px;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+.badge {
+  padding-left: 9px;
+  padding-right: 9px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;
+}
+
+#lblCartCount {
+  font-size: 12px;
+  background: #ff0000;
+  color: #fff;
+  padding: 0 5px;
+  vertical-align: top;
+  margin-left: -10px;
+}
+
+.signIn {
+  padding-left: 28px;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+/* Header end */
+/* Header 2nd */
+.menu {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #32aeb1;
+}
+
+.menu > p {
+  display: flex;
+  color: white;
+  font-size: 22px;
+  padding: 0 70px;
+  font-family: "Lato", sans-serif;
+}
+/* End */
+
+/* Covid Essentials */
+.nav-sections > ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  height: 50px;
+  align-items: center;
+  background-color: white;
+}

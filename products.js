@@ -657,17 +657,22 @@ function checkboxltc() {
 var chechbox7 = document.getElementById("Mkt: Itc India Ltd");
 chechbox7.addEventListener("click", checkboxltc);
 var total_cart_product = 0;
-var totacartdisplay = document.getElementById("carttoal");
+//var totacartdisplay = document.getElementById("carttoal");
+
 function addtoCart(el) {
   var cart_data = JSON.parse(localStorage.getItem("cart")) || [];
 
   cart_data.push(el);
   localStorage.setItem("cart", JSON.stringify(cart_data));
+  document.getElementById("lblCartCount").textContent = cart_data.length;
   total_cart_product++;
 
-  document.getElementById("carttoal").innerHTML = null;
-  var cart_total_p = document.createElement("p");
-  cart_total_p.innerText = total_cart_product;
-  totacartdisplay.append(cart_total_p);
-  console.log(total_cart_product);
+  //document.getElementById("carttoal").innerHTML = null;
+  //var cart_total_p = document.createElement("p");
+  //cart_total_p.innerText = total_cart_product;
+  //totacartdisplay.append(cart_total_p);
+  //console.log(total_cart_product);
 }
+
+var cart_data = JSON.parse(localStorage.getItem("cart")) || [];
+document.getElementById("lblCartCount").textContent = cart_data.length;

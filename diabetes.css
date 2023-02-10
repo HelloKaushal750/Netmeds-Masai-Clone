@@ -1,6 +1,6 @@
 .holepage {
   /* width: 1496px;
-  background-color: rgb(237, 239, 252); */
+    background-color: rgb(237, 239, 252); */
   /* background-color: #f3f3f3; */
   /* height: 3422.96px; */
   margin: 0;
@@ -242,9 +242,9 @@ h1 div + hr {
   display: flex;
   align-items: center;
   /* flex-direction: row;
-  position: absolute;
-  right: 10px;
-  top: 45%; */
+    position: absolute;
+    right: 10px;
+    top: 45%; */
   justify-content: right;
   margin-right: 20px;
 }
@@ -457,7 +457,7 @@ hr {
   #orderrightdiv {
     width: 40%;
     /* display: flex;
-    flex-flow: column; */
+      flex-flow: column; */
   }
   #img-prod > div > img {
     width: 50%;

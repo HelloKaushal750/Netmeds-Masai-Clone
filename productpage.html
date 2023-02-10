@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./products.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <title>MedicBuilders</title>
+    <link rel="icon" type="images/x-icon" href="https://bstudio-assets.azureedge.net/assets-builder/uploads/application/new_app_builder_icon/5b8cd7920b82ec2d09173049/Netmeds.svg" sizes="96x96"/>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      #maincontainer {
+        display: flex;
+        width: 80%;
+        margin: auto;
+        height: 60vh;
+        box-shadow: 0px 4px 35px rgba(0, 0, 0, 0.08);
+        margin: 100px;
+      }
+      #maincontainer div {
+        width: 50%;
+        
+      }
+      #leftcontainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #leftcontainer img {
+        width: 60%;
+      }
+      #rightcontainer {
+        margin: 70px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+      }
+      .final-price {
+        color: #ef4281;
+        font-family: LatoBold;
+        font-size: 15px !important;
+      }
+      .final-price + p , p {
+        font-size: 13px;
+      }
+      .cartbutton
+      {
+        width: 95%;
+        
+        background: rgb(36, 174, 177);
+        font-size: 14px;
+         border-radius: 5px;
+         color: #fff;
+
+        
+          border-radius: 5px;
+          box-shadow: none;
+          border: none;
+         border-color: rgb(36, 174, 177);
+       cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="holepage">
+        <header class="page-header">
+          <div class="logo">
+            <img
+              src="https://nms-assets.s3-ap-south-1.amazonaws.com/images/cms/aw_rbslider/slides/1663609483_netmeds-new-logo.svg"
+              alt=""
+            />
+          </div>
+          <div class="search-bar">
+            <button>
+              <label for="">Deliver to</label>
+              <select name="city" id="city">
+                <option value="bengaluru">110001</option>
+                <option value="delhi">411015</option>
+                <option value="pune">110022</option>
+                <option value="mumbai">411015</option>
+              </select>
+              <span id="line">|</span>
+              <input
+                type="text"
+                placeholder="Search for medicine & wellness products..."
+              />
+            </button>
+          </div>
+          <div class="upload">
+            <div><i class="fa-solid fa-file-arrow-up"></i></div>
+            <p>Upload</p>
+          </div>
+          <div class="cart">
+            <div><i class="fa-solid fa-cart-plus"></i><span class='badge badge-warning' id='lblCartCount'>0</span></div>
+            <p onclick='window.location.href = "cart.html"'>Cart</a></p>
+          </div>
+          <div class="signIn">
+            <div><i class="fa-solid fa-right-to-bracket"></i></div>
+            <p>Sign in / Sign up</p>
+          </div>
+        </header>
+      <!-- hederend end-->
+      <!-- 2nd header -->
+      <div class="menu">
+        <p>Medicine</p>
+        <p>Wellness</p>
+        <p>Lab Test</p>
+        <p>Beauty</p>
+        <p>Health Care</p>
+      </div>
+      <!-- End  -->
+      <!-- div 1 start-->
+      <div class="nav-sections">
+        <ul>
+            <li>Covid Essentials</li>
+            <li>Diabetes</li>
+            <li>Veterinary</li>
+            <li>Eyewear</li>
+            <li>Ayush</li>
+            <li>Ayurvedic</li>
+            <li>Homeopathy</li>
+            <li>Fitness</li>
+            <li>Mom & Baby</li>
+            <li>Devices</li>
+            <li>Surgicals</li>
+            <li>Sexual Wellness</li>
+            <li>Treatements</li>
+        </ul>
+    </div>
+    <div id="maincontainer">
+      <div id="leftcontainer">
+        <img
+          src="https://www.netmeds.com/images/product-v1/150x150/15114/dettol_antiseptic_liquid_60_ml_0_2.jpg"
+          alt="Product image"
+        />
+      </div>
+      <div id="rightcontainer">
+        <h3>Dettol Antiseptic Liquid 60 ml</h3>
+
+        <span class="final-price"><span>Price </span>₹ 1,439.40 </span>
+        <p>Mkt: Reckitt Benckiser India Ltd</p>
+        <p> Country of Origin: India</p>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="./productpage.js"></script>
