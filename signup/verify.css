@@ -1,0 +1,103 @@
+Body {
+  background: linear-gradient(to bottom, #0293d6ec,#302b63,#24243e);
+}
+
+#right_part{
+  max-width: 50%;
+}
+#right_part .Container {
+  display: Flex;
+  flex-flow: Column;
+  height: 100%;
+  align-items: Space-Around;
+  justify-content: Center;
+}
+
+#right_part .UserInput {
+  display: Flex;
+  justify-content: Center;
+}
+
+#right_part Input {
+  margin: 10px;
+  height: 35px;
+  width: 65px;
+  border: None;
+  border-radius: 5px;
+  text-align: Center;
+  font-family: Arimo;
+  font-size: 20px;
+  caret-color: transparent;
+  background: rgb(34 163 255 / 48%);
+  color: rgb(253, 252, 252);
+}
+/* Chrome, Safari, Edge, Opera */
+#right_part input::-webkit-outer-spin-button,
+#right_part input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+#right_part input[type=number] {
+  -moz-appearance: textfield;
+}
+#right_part H1 {
+  text-align: Center;
+  font-family: Arimo;
+  color: #1fe9ba;
+}
+#right_part #btn {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 30px;
+}
+#right_part Button {
+  width: 150px;
+  height: 40px;
+  /* margin: 25px Auto 0px Auto; */
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: rgb(25 166 194);
+  color: white;
+  font-size: 16px;
+  padding: 10px 0;
+}
+#right_part button:hover {
+  background-color: rgb(3, 41, 90);
+}
+/* #right_part #verify {
+    color: rgb(25, 194, 25);
+    text-align: center;
+    font-size: 50px;
+} */
+#right_part #para {
+    display: flex;
+    justify-content: center;
+}
+#right_part p {
+    margin-top: -10px;
+    margin-bottom: -150px;
+    font-size: 20px;
+    width: 60%;
+    text-align: center;
+}
+
+
+
+
+#container{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 30px;
+  /* border: 1px solid; */
+
+}
+
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
