@@ -156,6 +156,7 @@ button > label {
   flex-direction: row;
   background-color: #f3f7fb;
 }
+
 #product_left_container {
   width: 20%;
   padding: 5px;
@@ -219,10 +220,13 @@ h1 div + hr {
   width: 80%;
   height: 1200px;
   background-color: rgb(237, 239, 252);
+  background-color: rgb(237, 239, 252);
 
   margin-left: 20px;
 }
 #productcontainer_slide {
+  width: 1163.88px;
+  height: 232.99px;
   width: 1163.88px;
   height: 232.99px;
   margin: auto;
@@ -242,6 +246,8 @@ h1 div + hr {
   display: flex;
   align-items: center;
   /* flex-direction: row;
+  align-items: center;
+  /* flex-direction: row;
   position: absolute;
   right: 10px;
   top: 45%; */
@@ -252,6 +258,8 @@ h1 div + hr {
   font-family: Lato;
   color: #151b39;
   font-weight: 400;
+  padding-left: 20px;
+  padding-right: 20px;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -279,6 +287,8 @@ h1 div + hr {
   background-color: #ffffff;
 }
 #productdiv h2 {
+  height: 58.84px;
+  font-size: 13px;
   height: 58.84px;
   font-size: 13px;
   font-weight: 700;
@@ -313,6 +323,7 @@ h1 div + hr {
   background-color: #ffffff;
   height: 320px;
   padding-top: 10px;
+  padding-top: 10px;
 }
 #productcarddiv div p,
 h5 {
@@ -329,6 +340,10 @@ h5 {
   height: 42px;
   display: flex;
   align-items: center;
+  width: 240.36px;
+  height: 42px;
+  display: flex;
+  align-items: center;
 }
 #productcarddiv div h5 + p {
   font-style: italic;
@@ -338,13 +353,18 @@ h5 {
   font-weight: 400;
   width: 240.36px;
   height: 16px;
+  width: 240.36px;
+  height: 16px;
 }
 #productcarddiv div h5 + p + p {
+  width: 240.36px;
+  height: 28.4px;
   width: 240.36px;
   height: 28.4px;
   color: #ef4281;
   margin-top: 5px;
   font-weight: 700;
+  align-items: center;
   align-items: center;
 }
 #productcarddiv button {
@@ -369,7 +389,9 @@ h5 {
 
 #productfilter h1 {
   /* font-family: 20px; */
+  /* font-family: 20px; */
   font-weight: 400;
+  font-size: 20px;
   font-size: 20px;
   font-style: normal;
   color: #151b39;
@@ -530,4 +552,9 @@ hr {
   #productcarddiv {
     grid-template-columns: repeat(1, 1fr);
   }
+}
+
+/* Covid Essentials Header */
+
+header {
 }
