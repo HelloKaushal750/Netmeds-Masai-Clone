@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./productpage.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <title>MedicBuilders</title>
+    <link rel="icon" type="images/x-icon" href="https://bstudio-assets.azureedge.net/assets-builder/uploads/application/new_app_builder_icon/5b8cd7920b82ec2d09173049/Netmeds.svg" sizes="96x96"/>
+  </head>
+  <body>
+    <div class="holepage">
+        <header class="page-header">
+          <div class="logo">
+            <img
+              src="https://nms-assets.s3-ap-south-1.amazonaws.com/images/cms/aw_rbslider/slides/1663609483_netmeds-new-logo.svg"
+              alt="" onclick='window.location.href = "index.html"'
+            />
+          </div>
+          <div class="search-bar">
+            <button>
+              <label for="">Deliver to</label>
+              <select name="city" id="city">
+                <option value="bengaluru">110001</option>
+                <option value="delhi">411015</option>
+                <option value="pune">110022</option>
+                <option value="mumbai">411015</option>
+              </select>
+              <span id="line">|</span>
+              <input
+                type="text"
+                placeholder="Search for medicine & wellness products..."
+              />
+            </button>
+          </div>
+          <div class="upload">
+            <div><i class="fa-solid fa-file-arrow-up"></i></div>
+            <p>Upload</p>
+          </div>
+          <div class="cart">
+            <div><i class="fa-solid fa-cart-plus"></i><span class='badge badge-warning' id='lblCartCount'>0</span></div>
+            <p onclick='window.location.href = "cart.html"'>Cart</a></p>
+          </div>
+          <div class="signIn">
+            <div><i class="fa-solid fa-right-to-bracket"></i></div>
+            <p onclick='window.location.href = "signUp.html"'>Sign in / Sign up</p>
+          </div>
+        </header>
+      <!-- hederend end-->
+      <!-- 2nd header -->
+      <div class="menu">
+        <p onclick='window.location.href = "Covid-Essentials.html"'>Medicine</p>
+        <p onclick='window.location.href = "Diabetes.html"'>Wellness</p>
+        <p onclick='window.location.href = "Covid-Essentials.html"'>Lab Test</p>
+        <p onclick='window.location.href = "Diabetes.html"'>Beauty</p>
+        <p onclick='window.location.href = "Covid-Essentials.html"'>Health Care</p>
+      </div>
+      <!-- End  -->
+      <!-- div 1 start-->
+      <div class="nav-sections">
+        <ul>
+            <li onclick='window.location.href = "Covid-Essentials.html"'>Covid Essentials</li>
+            <li onclick='window.location.href = "Diabetes.html"'>Diabetes</li>
+            <li onclick='window.location.href = "Covid-Essentials.html"'>Veterinary</li>
+            <li onclick='window.location.href = "Diabetes.html"'>Eyewear</li>
+            <li onclick='window.location.href = "Covid-Essentials.html"'>Ayush</li>
+            <li onclick='window.location.href = "Diabetes.html"'>Ayurvedic</li>
+            <li onclick='window.location.href = "Covid-Essentials.html"'>Homeopathy</li>
+            <li onclick='window.location.href = "Diabetes.html"'>Fitness</li>
+            <li onclick='window.location.href = "Covid-Essentials.html"'>Mom & Baby</li>
+            <li onclick='window.location.href = "Diabetes.html"'>Devices</li>
+            <li onclick='window.location.href = "Covid-Essentials.html"'>Surgicals</li>
+            <li onclick='window.location.href = "Diabetes.html"'>Sexual Wellness</li>
+            <li onclick='window.location.href = "Covid-Essentials.html"'>Treatements</li>
+        </ul>
+    </div>
+    <div id="maincontainer">
+      <div id="leftcontainer">
+        <div class="slideshow-container">
+
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 7</div>
+            <img src="https://www.netmeds.com/images/product-v1/600x600/835057/dettol_antiseptic_liquid_550_ml_0_1.jpg" style="width:100%">
+            <div class="text">Caption One</div>
+          </div>
+        
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 7</div>
+            <img src="https://www.netmeds.com/images/product-v1/600x600/835057/dettol_antiseptic_liquid_550_ml_1_1.jpg" style="width:100%">
+            <div class="text">Caption Two</div>
+          </div>
+        
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 7</div>
+            <img src="https://www.netmeds.com/images/product-v1/600x600/835057/dettol_antiseptic_liquid_550_ml_2_2.jpg" style="width:100%">
+            <div class="text">Caption Three</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">4 / 7</div>
+            <img src="https://www.netmeds.com/images/product-v1/600x600/835057/dettol_antiseptic_liquid_550_ml_3_2.jpg" style="width:100%">
+            <div class="text">Caption Four</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">5 / 7</div>
+            <img src="https://www.netmeds.com/images/product-v1/600x600/835057/dettol_antiseptic_liquid_550_ml_4_2.jpg" style="width:100%">
+            <div class="text">Caption Five</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">6 / 7</div>
+            <img src="https://www.netmeds.com/images/product-v1/600x600/835057/dettol_antiseptic_liquid_550_ml_5_2.jpg" style="width:100%">
+            <div class="text">Caption Six</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">7 / 7</div>
+            <img src="https://www.netmeds.com/images/product-v1/600x600/835057/dettol_antiseptic_liquid_550_ml_6_1.jpg" style="width:100%">
+            <div class="text">Caption Seven</div>
+          </div>
+        
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+      </div>
+      <div id="rightcontainer">
+        <h3>Dettol Antiseptic Liquid 60 ml</h3>
+        <div id="btn2">
+          <button onclick = "window.location.href='Covid-Essentials.html';">Covid Essential</button>
+          <button onclick = "window.location.href='Diabetes.html';">Diabetes</button>
+        </div>
+        <hr>
+        <h2 class="final-price">Best Price <span id="rupee">₹1,439.40 </span></h2>
+        <p>MRP  <s>₹ 143.06</s><span id="green">&nbsp;&nbsp;&nbsp;GET 10% OFF</span></p>
+        <p>(Inclusive of all taxes)</p>
+        <p>*This product cannot be returned for a refund or exchange.</p>
+        <p>* Mkt: Reckitt Benckiser India Ltd</p>
+        <p>* Country of Origin: India</p>
+        <p>* Delivery charges if applicable will be applied at checkout</p>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="classfooter">
+          <img src="https://www.netmeds.com/assets/gloryweb/images/netmeds-footer-logo.svg" alt="Indias Pharmacy">
+          <p>Netmeds.com is one of India’s most trusted pharmacies, dispensing quality medicines at reasonable prices to over 7 million happy customers – PAN India</p>
+      </div>
+      <hr>
+  </footer>
+  </body>
+</html>
+<script src="./productpage.js"></script>
+<script src="https://kit.fontawesome.com/3244e8e1e6.js" crossorigin="anonymous"></script>

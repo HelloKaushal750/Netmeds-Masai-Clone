@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  type="text/css" href="slidestyle.css">
+    <title>MedicBuilders</title>
+    <link rel="icon" type="images/x-icon" href="https://bstudio-assets.azureedge.net/assets-builder/uploads/application/new_app_builder_icon/5b8cd7920b82ec2d09173049/Netmeds.svg" sizes="96x96"/>
+</head>
+<body>
+    <div id="top">
+        <img id="img"
+        src="./assets/image.png"
+        alt="bestdeals"
+      />
+    <div class ="main">
+        <input type="checkbox" id="chk" aria-hidden="true">
+
+        <div class="signup">
+            <form>
+                <label for="chk" aria-hidden ="true">Sign up</label>
+                <input type="text" name="txt" id="name" placeholder="User name" required="">
+                <input type="email" name="email" id="emailSignUp" placeholder="Email" required="">
+                <input type="password" name="pswd" id="pswdSignUp" placeholder="password" required="">
+                <input type="text" name="phno"  placeholder="phone number" id="MobileNum" required="" maxlength="10">
+                <button id="signUpBtn">Sign up</button>
+            </form>
+        </div>
+
+        <div class="login">
+            <form>
+                <label for="chk" aria-hidden="true">Login</label>
+                <input type="email" name="email" placeholder="Email" id="emailLogIn" required="">
+                <input type="password" name="pswd" id="pswdLogin" placeholder="password" required="">
+                <button id="loginBtn">Login</button>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="signUp.js"></script>
+</body>
+</html>
