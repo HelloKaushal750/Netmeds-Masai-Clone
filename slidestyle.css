@@ -27,13 +27,16 @@ body{
     height: 500px;
     background: red;
     overflow: hidden;
-    background: url("1.jpg") no-repeat center / cover;
+    background: url("") no-repeat center / cover;
     border-radius: 10px;
     /* box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); */
     box-shadow: 5px 20px 50px #000;
 }
 
 #chk{
+display: none;
+}
+#chk1{
 display: none;
 }
 
@@ -98,6 +101,18 @@ button:hover{
     /* background: #e60991; */
 }
 
+.address{
+    transform: translateX(300px);
+    position: relative;
+    bottom: 419px;
+    height: 460px;
+    background: transparent;
+    border-radius: 60% / 10%;
+    /* transform: translateX(-180px); */
+    transition: .8s ease-in-out;
+    /* background: #e60991; */
+}
+
 .login label{
     color: #573b8a;
     transform: scale(.6);
@@ -109,16 +124,53 @@ button:hover{
 #chk:checked ~ .login label{
     transform: scale(1);
 }
-#chk:checked ~ .signup label{
+#chk:checked ~ .signup>form>label{
     transform: scale(.6)
 }
+
+#chk1:checked ~ .userdetails{
+    /* display: none; */
+    opacity: 0;
+}
+#chk1:checked ~ .address{
+    transform: translateX(0px);
+}
+#chk1:checked ~ .address>label{
+    transform: scale(0.8);
+    transform: rotate(0deg) !important;
+    opacity: 0;
+    position: unset;
+    margin:5px;
+}
+#chk1:checked ~ .userdetails>label {
+    transform: scale(.6);
+    transform: rotate(270deg);
+}
+
 
 .signup>form{
     position: relative;
     bottom: 38px;
 }
 
-.signup label{
+/* #signUpBtn{
+    z-index: 9;
+    position: relative;
+} */
+
+/* .login{
+    z-index: 99999;
+    position: relative;
+} */
+.address>label{
+    margin:5px;
+    position: relative;
+    transform: rotate(270deg) scale(.6) !important;
+    right: 149px;
+    top: 200px;
+    color: #702de9;
+}
+.signup>form>label{
     position: relative;
     top: 10px;
 }
