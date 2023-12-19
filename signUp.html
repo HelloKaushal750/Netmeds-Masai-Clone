@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>signUp</title>
+    <title>MedicBuilders</title>
+    <link rel="icon" type="images/x-icon" href="https://bstudio-assets.azureedge.net/assets-builder/uploads/application/new_app_builder_icon/5b8cd7920b82ec2d09173049/Netmeds.svg" sizes="96x96"/>
     <link rel="stylesheet"  type="text/css" href="slidestyle.css">
 <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap"  rel="stylesheet">
 </head>
@@ -16,15 +17,29 @@
       />
     <div class ="main">
         <input type="checkbox" id="chk" aria-hidden="true">
+        
 
         <div class="signup">
             <form>
                 <label for="chk" aria-hidden ="true">Sign up</label>
-                <input type="text" name="txt" id="name" placeholder="User name" required="">
-                <input type="email" name="email" id="emailSignUp" placeholder="Email" required="">
-                <input type="password" name="pswd" id="pswdSignUp" placeholder="password" required="">
-                <input type="number" name="phno"  placeholder="phone number" id="MobileNum" required="">
-                <button id="signUpBtn">Sign up</button>
+                <input type="checkbox" id="chk1" aria-hidden="true">
+                <div class="userdetails">
+                    <input type="text" name="txt" id="name" placeholder="User name" required="">
+                    <input type="email" name="email" id="emailSignUp" placeholder="Email" required="">
+                    <input type="password" name="pswd" id="pswdSignUp" placeholder="password" required="">
+                    <input type="text" name="phno"  placeholder="phone number" id="MobileNum" required="" maxlength="10">
+                    <button id="signUpBtn">Sign up</button>
+                </div>
+                <div class = 'address'>
+                    <label for="chk1">Address</label>
+                    <input type="text" name="txt" id="address" placeholder="Address" required="">
+                    <input type="text" name="txt" id="state" placeholder="State" required="">
+                    <input type="text" name="txt" id="city" placeholder="City" required="">
+                    <input type="text" name="txt" id="pincode" placeholder="Pin Code" required="">
+                    <input type="text" name="txt" id="landmark" placeholder="Landmark" required="">
+                    <button id="signUpBtn1">Sign up</button>
+                </div>
+                
             </form>
         </div>
 

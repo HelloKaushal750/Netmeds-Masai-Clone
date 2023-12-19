@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <title>MedicBuilders</title>
+    <link rel="icon" type="images/x-icon" href="https://bstudio-assets.azureedge.net/assets-builder/uploads/application/new_app_builder_icon/5b8cd7920b82ec2d09173049/Netmeds.svg" sizes="96x96"/>
+</head>
+<body>
+    <div class="page">
+        <!-- header -->
+        <header class="page-header">
+            <div class="logo">
+              <img
+                src="https://nms-assets.s3-ap-south-1.amazonaws.com/images/cms/aw_rbslider/slides/1663609483_netmeds-new-logo.svg"
+                alt="" onclick='window.location.href = "index.html"'
+              />
+            </div>
+            <div class="search-bar">
+              <button>
+                <label for="">Deliver to</label>
+                <select name="city" id="city">
+                  <option value="bengaluru">110001</option>
+                  <option value="delhi">411015</option>
+                  <option value="pune">110022</option>
+                  <option value="mumbai">411015</option>
+                </select>
+                <span id="line">|</span>
+                <input
+                  type="text"
+                  placeholder="Search for medicine & wellness products..."
+                />
+              </button>
+            </div>
+            <div class="upload">
+              <div><i class="fa-solid fa-file-arrow-up"></i></div>
+              <p>Upload</p>
+            </div>
+            <div class="cart">
+              <div><i class="fa-solid fa-cart-plus"></i><span class='badge badge-warning' id='lblCartCount'>0</span></div>
+              <p onclick='window.location.href = "cart.html"'>Cart</a></p>
+            </div>
+            <div class="signIn">
+              <div><i class="fa-solid fa-right-to-bracket"></i></div>
+              <p onclick='window.location.href = "signUp.html"'>Sign in / Sign up</p>
+            </div>
+          </header>
+        <!-- hederend end-->
+        <!-- 2nd header -->
+        <div class="menu">
+          <p onclick='window.location.href = "Covid-Essentials.html"'>Medicine</p>
+          <p onclick='window.location.href = "Diabetes.html"'>Wellness</p>
+          <p onclick='window.location.href = "Covid-Essentials.html"'>Lab Test</p>
+          <p onclick='window.location.href = "Diabetes.html"'>Beauty</p>
+          <p onclick='window.location.href = "Covid-Essentials.html"'>Health Care</p>
+        </div>
+        <!-- End  -->
+        <!-- div 1 start-->
+        <div class="nav-sections">
+          <ul>
+              <li onclick='window.location.href = "Covid-Essentials.html"'>Covid Essentials</li>
+              <li onclick='window.location.href = "Diabetes.html"'>Diabetes</li>
+              <li onclick='window.location.href = "Covid-Essentials.html"'>Veterinary</li>
+              <li onclick='window.location.href = "Diabetes.html"'>Eyewear</li>
+              <li onclick='window.location.href = "Covid-Essentials.html"'>Ayush</li>
+              <li onclick='window.location.href = "Diabetes.html"'>Ayurvedic</li>
+              <li onclick='window.location.href = "Covid-Essentials.html"'>Homeopathy</li>
+              <li onclick='window.location.href = "Diabetes.html"'>Fitness</li>
+              <li onclick='window.location.href = "Covid-Essentials.html"'>Mom & Baby</li>
+              <li onclick='window.location.href = "Diabetes.html"'>Devices</li>
+              <li onclick='window.location.href = "Covid-Essentials.html"'>Surgicals</li>
+              <li onclick='window.location.href = "Diabetes.html"'>Sexual Wellness</li>
+              <li onclick='window.location.href = "Covid-Essentials.html"'>Treatements</li>
+          </ul>
+      </div>
+        <div class="banner-first">
+            <a href=""><img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1675422663_Home_Bannersvdsgsgf.jpg" alt="Indias Pharmacy"></a>  
+        </div>
+        <div class="banner-second">
+            <div>
+                <a href=""><img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1673334250_436-x-224_Web.jpg" alt="Indias Pharmacy"></a>
+            </div>
+            <div>
+                <a href=""><img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1673334210_436-x-224_Web.jpg" alt="Indias Pharmacy"></a>
+            </div>
+            <div id="banner3rd">
+                <a href=""><img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1673334175_436-x-224_Web.jpg" alt="Indias Pharmacy"></a>
+            </div>
+        </div>
+        <div class="space-1">
+
+        </div>
+        <section class="shop-by-category">
+            <div class="section-category">
+                <h2>Shop By Category</h2>
+                <div class="category">
+                    <div class="category-card">
+                        <a href=""><img src="https://www.netmeds.com/images/category/481/thumb/ayush_1.jpg" alt="Indias Pharmacy"></a>
+                        <span class="cat_title">Ayush</span>
+                    </div>
+                    <div class="category-card">
+                        <a href=""><img src="https://www.netmeds.com/images/category/v1/547/thumb/hair_care_2.jpg" alt="Indias Pharmacy"></a>
+                        <span class="cat_title">Hair Care</span>
+                    </div>
+                    <div class="category-card">
+                        <a href=""><img src="https://www.netmeds.com/images/category/v1/525/thumb/body_care_1.jpg" alt="Indias Pharmacy"></a>
+                        <span class="cat_title">Body Care</span>
+                    </div>
+                    <div class="category-card">
+                        <a href=""><img src="https://www.netmeds.com/images/category/624/thumb/treatments_1.jpg" alt="Indias Pharmacy"></a>
+                        <span class="cat_title">Treatements</span>
+                    </div>
+                    <div class="category-card" id="donotdisplay">
+                        <div id="imge"><a href=""><img src="https://www.netmeds.com/images/category/821/thumb/cold_and_fever.jpg" alt="Indias Pharmacy"></a></div>
+                        <span class="cat_title">Cold and Fever</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="top-category">
+            <div class="first-category">
+                <div>
+                    <img src="https://www.netmeds.com/assets/gloryweb/images/icons/Wellnessnew.svg" alt="Indias Pharmacy">
+                    <span class="headSave">
+                        <span class="headIng">Order Medicine</span>
+                        <span class="save">Save upto 25% off</span>
+                    </span>
+                </div>
+                <div>
+                    <img src="https://www.netmeds.com/assets/gloryweb/images/icons/Beautynew.svg" alt="Indias Pharmacy">
+                    <span class="headSave">
+                        <span class="headIng">Beauty</span>
+                        <span class="save">Save upto 40% off</span>
+                    </span>
+                </div>
+                <div>
+                    <img src="https://www.netmeds.com/assets/gloryweb/images/icons/ordermedicinnew.svg" alt="Indias Pharmacy">
+                    <span class="headSave">
+                        <span class="headIng">Wellness</span>
+                        <span class="save">Up to 25% off</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <section class="productsDisplay">
+            <h2>
+                Deals on your Daily Nourishments
+            </h2>
+            <div class="swiper-container">
+                <div class="pro-card">
+                    <img src="https://www.netmeds.com/images/product-v1/150x150/918074/gnc_mega_men_sport_tablet_120s_0_0.jpg" alt="">
+                    <p class="titlecard"> GNC Mega Men Sport Tablet 120's </p>
+                    <span class="price-card">₹1439.60</span>
+                    <button>Buy</button>
+                </div>
+                <div class="pro-card">
+                    <img src="https://www.netmeds.com/images/product-v1/150x150/1029645/aiwo_sucralose_powder_100_gm_0_0.jpg" alt="">
+                    <p class="titlecard"> Aiwo Sucralose Powder 100 Gm </p>
+                    <span class="price-card">₹1733.58</span>
+                    <button>Buy</button>
+                </div>
+                <div class="pro-card">
+                    <img src="https://www.netmeds.com/images/product-v1/150x150/408879/healthaid_flax_seed_oil_1000_mg_capsules_60_s_0.jpg" alt="">
+                    <p class="titlecard"> HealthAid Flax Seed Oil 1000 mg Capsules 60's </p>
+                    <span class="price-card">₹1396.50</span>
+                    <button>Buy</button>
+                </div>
+                <div class="pro-card">
+                    <img src="https://www.netmeds.com/images/product-v1/150x150/918055/gnc_womens_multivitamin_50_plus_tablet_120s_0_0.jpg" alt="">
+                    <p class="titlecard"> GNC Women's Multivitamin 50 Plus Tablet 120's </p>
+                    <span class="price-card">₹1653.70</span>
+                    <button>Buy</button>
+                </div>
+                <div class="pro-card">
+                    <img src="https://www.netmeds.com/images/product-v1/150x150/815445/healthvit_l_tyrosine_550_mg_capsules_60_s_0.jpg" alt="">
+                    <p class="titlecard"> HealthVit L-Tyrosine 550 mg Capsules 60's  </p>
+                    <span class="price-card">₹780.00</span>
+                    <button>Buy</button>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="classfooter">
+                <div><img src="https://www.netmeds.com/assets/gloryweb/images/netmeds-footer-logo.svg" alt="Indias Pharmacy"></div>
+                <p>Netmeds.com is one of India’s most trusted pharmacies, dispensing quality medicines at reasonable prices to over 7 million happy customers – PAN India</p>
+            </div>
+            <hr>
+            <div class="footer-container">
+                <ul>
+                    <li><h2>Company</h2></li>
+                    <li>About Netmeds</li>
+                    <li>Customer Speak</li>
+                    <li>In the News</li>
+                    <li>Career</li>
+                    <li>Terms and Conditions</li>
+                    <li>Privacy Policy</li>
+                    <li>Fees and Payment Policy</li>
+                    <li>Shipping and Delivery Policy</li>
+                    <li>Return, Refund and Cancellation Policy</li>
+                    <li>Contact</li>
+                </ul>
+                <ul>
+                    <li><h2>Shopping</h2></li>
+                    <li>Browse by A-Z</li>
+                    <li>Browse by Manufactures</li>
+                    <li>Health Articles</li>
+                    <li>Offer / Coupons</li>
+                    <li>FAQs</li>
+                </ul>
+                <ul>
+                    <li><h2>Patients Alike</h2></li>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>LinkedIn</li>
+                    <li>YouTube</li>
+                    <li>Refer and Earn</li>
+                </ul>
+                <div>
+                    <h2>Subscribe to our Newsletter</h2>
+                    <p>Get a free subscription to our health and fitness tip and stay tuned to our latest offers</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
+<script src="https://kit.fontawesome.com/3244e8e1e6.js" crossorigin="anonymous"></script>
+<script>
+    let cart_data = JSON.parse(localStorage.getItem("cart")) || [];
+    document.getElementById("lblCartCount").textContent = cart_data.length;
+</script>

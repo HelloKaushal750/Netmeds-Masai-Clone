@@ -4,52 +4,40 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MedicBuilders</title>
+    <title>MedicBuilders.com</title>
+    <link rel="stylesheet" href="OTP.css" />
     <link rel="icon" type="images/x-icon" href="https://bstudio-assets.azureedge.net/assets-builder/uploads/application/new_app_builder_icon/5b8cd7920b82ec2d09173049/Netmeds.svg" sizes="96x96"/>
-    <link rel="stylesheet" href="verify.css" />
   </head>
   <body>
-    <div id="container">
-      <div id="left_part">
-        <img
-          src="./assets/image.png"
-          alt="bestdeals"
-        />
-      </div>
-      <div id="right_part">
-        <h1 id="verify">OTP Verification</h1>
+    <h1 id="verify">OTP Verification</h1>
     <div id="para">
       <p>
-        A OTP (One Time Password) has been sent to your mobile
-        number: <strong id="mobNum"></strong>. 
+        A OTP (One Time Password) has been sent to your registered mobile
+        number. Please enter the OTP in the field below to verify your bank
+        account.
       </p>
     </div>
     <div class="Container">
       <h1>ENTER OTP</h1>
       <div class="UserInput">
-        <input type="text"  id="First" maxlength="1" />
-        <input type="text"  id="Second" maxlength="1" />
-        <input type="text"  id="Third" maxlength="1" />
-        <input type="text"  id="Fourth" maxlength="1" />
-        <input type="text"  id="Fifth" maxlength="1" />
+        <input type="Text" id="First" maxlength="1" />
+        <input type="Text" id="Second" maxlength="1" />
+        <input type="Text" id="Third" maxlength="1" />
+        <input type="Text" id="Fourth" maxlength="1" />
+        <input type="Text" id="Fifth" maxlength="1" />
       </div>
       <div id="btn">
         <button type="submit" id="confirm">CONFIRM</button>
         <button id="resend">Resend OTP</button>
       </div>
     </div>
-      </div>
-    </div>
   </body>
 </html>
 
-
 <script>
-  alert('Your OTP is 12345');
-  var AllUsersArr = JSON.parse(localStorage.getItem("Allusers")) || [];
-  var userDetailObj = JSON.parse(localStorage.getItem("userDetails")) || null;
+  var OTP = ["1", "2", "3", "4", "5"];
+  localStorage.setItem("OTP", JSON.stringify(OTP));
 
-  document.getElementById('mobNum').textContent = userDetailObj.mobile;
   document.getElementById("confirm").addEventListener("click", submitotp);
 
   function submitotp() {
@@ -70,8 +58,8 @@
         return;
     }
 
-    var enteredOTP = [];
-    enteredOTP.push(otp);
+    var arr = [];
+    arr.push(otp);
 
     document.getElementById("First").value = "";
     document.getElementById("Second").value = "";
@@ -82,26 +70,23 @@
     var originalotp = JSON.parse(localStorage.getItem("OTP"));
 
     var flag = true;
-    enteredOTP.map(function (ele, index) {
+    arr.map(function (ele, index) {
       if (ele.First !== originalotp[0] || ele.Second !== originalotp[1] || ele.Third !== originalotp[2] || ele.Fourth !== originalotp[3] || ele.Fifth !== originalotp[4]) {
         flag = false;
       }
     });
 
     if (flag === false) {
-      alert("Incorrect OTP");
+      alert("Incorrect OTP, Correct OTP: 12345");
     } else {
       var btn = document.getElementById("btn");
-      AllUsersArr.push(userDetailObj);
-      localStorage.setItem("Allusers", JSON.stringify(AllUsersArr));
-      btn.setAttribute("onclick", "window.location.href = 'successful.html'");
+      btn.setAttribute("onclick", "window.location.href = 'thankyou.html'");
     }
   }
 
   document.getElementById("resend").addEventListener("click", sent);
 
   function sent() {
-    alert(`OTP successfully sent to your Mobile Number:${userDetailObj.mobile}`);
-    alert('Your OTP is 12345');
+    alert("OTP successfully sent to your RMN.")
   }
 </script>
