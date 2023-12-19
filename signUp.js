@@ -127,4 +127,3 @@ function clickedLogin() {
         alert('Wrong Credentials or Email not registered!');
     }
 }
-
